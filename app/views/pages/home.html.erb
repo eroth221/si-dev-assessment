@@ -3,9 +3,9 @@
 
 <%= form_tag("/sms/send", method: "post") do %>
 <!-- add form elements here -->
-<%= label_tag(:q, "Message:") %>
-<%= text_field_tag(:q) %>
-<%= label_tag(:r, "Number:") %>
-<%= text_field_tag(:r) %>
+<%= label_tag(:message, "Message:") %>
+<%= text_field_tag(:message) %>
+<%= label_tag(:number, "Number:") %>
+<%= text_field_tag(:number) %>
 <%= submit_tag("Submit") %>
 <% end %>
