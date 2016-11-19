@@ -1,2 +1,13 @@
-<h1>Pages#sms</h1>
-<p>Find me in app/views/pages/sms.html.erb</p>
+<h1>Submission Success!!!!</h1>
+<p>Your message has successfully been sent!</p>
+
+<%= "You sent the message: "%>
+<% if(params.has_key?(:message)) %>
+    <%= "#{params[:message]}" %>
+<% end %><br/>
+<%= "To the number: "%>
+<% if(params.has_key?(:number)) %>
+    <%= "#{params[:number]}" %>
+<% end %><br/><br/>
+<%= link_to("Go to home", {:action => "home"}) %><br/>
+
