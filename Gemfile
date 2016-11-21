@@ -54,5 +54,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # twilio install
 gem 'twilio-ruby'
+#figaro install
+gem 'figaro'
 
 ruby "2.3.0"

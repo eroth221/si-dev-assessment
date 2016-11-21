@@ -1,11 +1,11 @@
-<h1>My Home Page</h1>
-<p>Leave your comments and I'll be sure to get back to you!</p>
+<h1>Evan's SMS Service</h1>
+<p>Send a message to anyone below!</p>
 
 <%= form_tag("/sms/send", method: "post") do %>
 <!-- add form elements here -->
 <%= label_tag(:message, "Message:") %>
-<%= text_field_tag(:message) %>
+<%= text_field_tag(:message) %><br />
 <%= label_tag(:number, "Number:") %>
-<%= text_field_tag(:number) %>
+<%= text_field_tag(:number) %><br />
 <%= submit_tag("Submit") %>
 <% end %>
